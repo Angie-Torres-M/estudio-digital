@@ -1,0 +1,482 @@
+/* ========================================================
+   Estudio Digital · revisión Chewie Dev V1.3. Override no destructivo.
+   ======================================================== */
+
+.brand-mark {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid #d8e2e5;
+  border-radius: 11px;
+  overflow: hidden;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  padding: 2px;
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.site-footer .brand-mark {
+  background: #fff;
+}
+
+.site-nav .nav-services-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .46rem;
+  min-height: 45px;
+  line-height: 1.25;
+  vertical-align: middle;
+}
+
+.site-nav .nav-services-toggle .nav-chevron {
+  width: 15px;
+  height: 15px;
+  display: block;
+  flex-shrink: 0;
+  transition: transform .2s ease;
+  transform-origin: center;
+}
+
+.nav-services-toggle[aria-expanded=true] .nav-chevron {
+  transform: rotate(180deg);
+}
+
+.nav-services-menu {
+  top: calc(100% + 4px);
+}
+
+/* ========================================================
+   Mascota, con intención editorial: no sustituye las capturas reales del hero
+   ======================================================== */
+
+.chewie-about {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  max-width: 480px;
+  margin-top: 1.4rem;
+  padding: .8rem 1rem;
+  border-radius: 14px;
+  background: #f0f5f4;
+  border: 1px solid #dce8e5;
+}
+
+.chewie-about img {
+  width: 69px;
+  height: 69px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.chewie-about p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: .87rem;
+  line-height: 1.5;
+}
+
+.chewie-about strong {
+  color: var(--ink);
+  display: block;
+  font-size: .94rem;
+}
+
+.faq-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.28fr) minmax(230px,.72fr);
+  align-items: center;
+  gap: clamp(2rem,6vw,6rem);
+}
+
+.faq-hero-copy h1 {
+  max-width: 17ch;
+}
+
+.faq-chewie {
+  margin: 0;
+  padding: 1rem;
+  justify-self: end;
+  text-align: center;
+  max-width: 365px;
+  border-radius: 24px;
+  background: #edf4f2;
+  border: 1px solid #e0ebe7;
+}
+
+.faq-chewie img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: 1;
+}
+
+.faq-chewie figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+  margin: .3rem auto .5rem;
+  max-width: 32ch;
+}
+
+.faq-chewie figcaption strong {
+  color: var(--teal-dark);
+  font-size: 1.02rem;
+}
+
+.faq-chewie figcaption span {
+  color: var(--ink-soft);
+  font-size: .83rem;
+  line-height: 1.45;
+}
+
+/* ========================================================
+   Footer responsive: composición deliberadamente centrada en tablet y móvil
+   ======================================================== */
+
+.footer-copy-email {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  color: #d3e0e4;
+  text-align: inherit;
+  cursor: pointer;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: .87rem;
+  line-height: 1.6;
+}
+
+.footer-copy-email:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-copy-email:focus-visible {
+  outline: 2px solid #b3e8df;
+  outline-offset: 4px;
+}
+
+@media (max-width:1050px) {
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 2.5rem;
+    row-gap: 2.4rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-identity,.footer-column,.footer-column:last-child {
+    grid-column: auto;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .footer-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-identity p {
+    margin-inline: auto;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width:680px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2.3rem;
+  }
+
+  .footer-identity,.footer-column,.footer-column:last-child {
+    grid-column: 1;
+  }
+
+  .footer-bottom {
+    align-items: center;
+  }
+
+  .faq-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .faq-chewie {
+    max-width: 260px;
+    justify-self: center;
+  }
+
+  .chewie-about {
+    align-items: center;
+  }
+}
+
+@media (max-width:390px) {
+  .brand-mark {
+    width: 43px;
+    height: 43px;
+  }
+
+  .faq-chewie {
+    max-width: 220px;
+  }
+}
+
+@media (max-width:860px) {
+  .site-nav .nav-services-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+  }
+
+  .nav-services-menu {
+    top: auto;
+  }
+}
+
+/* ========================================================
+   Native modal: viewport-safe and independent of the site's nav layout
+   ======================================================== */
+
+.contact-dialog {
+  border: 1px solid #d9e6e4;
+  border-radius: 22px;
+  box-shadow: 0 25px 90px rgba(21,34,56,.29);
+  background: #fff;
+  color: var(--ink);
+  width: min(600px,calc(100% - 28px));
+  max-height: min(90dvh,830px);
+  padding: 0;
+  margin: auto;
+  overflow: auto;
+}
+
+.contact-dialog::backdrop {
+  background: rgba(11,22,39,.69);
+  backdrop-filter: blur(3px);
+}
+
+.dialog-shell {
+  padding: clamp(1.2rem,3.4vw,2.25rem);
+}
+
+.dialog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dialog-eyebrow {
+  font-size: .73rem;
+  color: var(--teal-dark);
+  letter-spacing: .12em;
+  font-weight: 820;
+}
+
+.dialog-close {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.dialog-shell h2 {
+  font-size: clamp(1.7rem,4vw,2.25rem);
+  margin: .75rem 0 .5rem;
+  line-height: 1.14;
+}
+
+.dialog-shell>p {
+  font-size: .95rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: .2rem 0 1.3rem;
+}
+
+.contact-mode[hidden] {
+  display: none !important;
+}
+
+.contact-info-note {
+  font-size: .96rem;
+  color: var(--ink-soft);
+  margin: 1.1rem 0;
+}
+
+.contact-mode:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  align-items: center;
+}
+
+.contact-mode .btn {
+  min-height: 46px;
+}
+
+.copy-status {
+  width: 100%;
+  font-size: .82rem;
+  margin: 0;
+  color: var(--teal-dark);
+}
+
+.dialog-shell .dialog-email {
+  border-top: 1px solid var(--line);
+  margin: 1.1rem 0 0;
+  padding-top: 1rem;
+  font-size: .83rem;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+}
+
+.contact-fineprint {
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  width: 100%;
+  margin: .2rem 0 0;
+}
+
+.contact-mode form {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  margin-top: .7rem;
+}
+
+.contact-mode label {
+  font-size: .85rem;
+  font-weight: 720;
+  display: grid;
+  gap: .4rem;
+  color: var(--ink-soft);
+  width: 100%;
+}
+
+.contact-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+}
+
+.contact-mode input:not([type=checkbox]),.contact-mode textarea,.contact-mode select {
+  font: inherit;
+  font-weight: 400;
+  font-size: .95rem;
+  border: 1px solid #adbdc6;
+  border-radius: 10px;
+  background: #fff;
+  min-height: 44px;
+  padding: .65rem .85rem;
+  color: var(--ink);
+  width: 100%;
+}
+
+.contact-mode textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-mode input:focus-visible,.contact-mode textarea:focus-visible,.contact-mode select:focus-visible {
+  outline: 3px solid #a9dcd6;
+  outline-offset: 1px;
+}
+
+.contact-mode .contact-privacy {
+  display: flex;
+  flex-direction: row;
+  gap: .6rem;
+  align-items: flex-start;
+  font-weight: 480;
+  font-size: .79rem;
+  line-height: 1.5;
+}
+
+.contact-privacy input {
+  margin-top: .19rem;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--teal-dark);
+  flex: none;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status {
+  font-size: .86rem;
+  color: var(--teal-dark);
+  margin: 0;
+  min-height: 1.3em;
+}
+
+.form-status[data-state=error] {
+  color: #a53b2f;
+}
+
+.contact-send:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+@media (max-width:500px) {
+  .contact-dialog {
+    width: calc(100% - 18px);
+    border-radius: 16px;
+  }
+
+  .dialog-shell {
+    padding: 1.15rem;
+  }
+
+  .contact-field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-mode .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .nav-chevron {
+    transition: none !important;
+  }
+}

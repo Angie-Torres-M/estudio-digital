@@ -1,0 +1,153 @@
+/* ==========================================================
+   {name.upper()} · Estilos particulares de esta página
+   ========================================================== */
+
+.business-visual {
+  padding: 1.35rem;
+  background: linear-gradient(180deg,#dae6e2 0%,#eef3f2 100%);
+}
+
+.business-visual .mock-browser {
+  box-shadow: none;
+  background: transparent;
+  border-radius: 18px;
+}
+
+.business-visual .mock-browser img {
+  border-radius: 18px;
+  border: 1px solid #d7e1e5;
+  box-shadow: var(--shadow-frame);
+  object-fit: contain;
+  background: #fff;
+}
+
+.business-visual .window-top {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 18px;
+  height: 32px;
+  z-index: 1;
+  background: transparent;
+  border: 0;
+}
+
+.business-visual .window-top span {
+  background: rgba(255,255,255,.88);
+  padding: .28rem .6rem;
+  border-radius: 999px;
+  color: #667789;
+  box-shadow: 0 8px 24px rgba(21,34,56,.08);
+}
+
+.business-visual .visual-caption {
+  font-size: .88rem;
+  color: #4b5d6d;
+  font-weight: 650;
+  padding-top: .9rem;
+}
+
+.feature-grid.feature-grid-cards,.steps-grid.steps-grid-cards {
+  gap: 1rem;
+}
+
+.feature-grid.feature-grid-cards .feature,.steps-grid.steps-grid-cards .step {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.3rem 1.3rem 1.35rem;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(21,34,56,.05);
+}
+
+.feature-grid.feature-grid-cards .feature {
+  border-top: 1px solid var(--line);
+}
+
+.feature-head,.step-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-icon,.step-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.feature-icon svg,.step-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--ink);
+  stroke-width: 1.8;
+  fill: none;
+}
+
+.feature:nth-child(1) .feature-icon,.step:nth-child(1) .step-icon {
+  background: #e5f0ec;
+}
+
+.feature:nth-child(2) .feature-icon,.step:nth-child(2) .step-icon {
+  background: #ecebfb;
+}
+
+.feature:nth-child(3) .feature-icon,.step:nth-child(3) .step-icon {
+  background: #f7ece8;
+}
+
+.feature:nth-child(4) .feature-icon,.step:nth-child(4) .step-icon {
+  background: #eef4f4;
+}
+
+.feature:nth-child(5) .feature-icon {
+  background: #f4f0e6;
+}
+
+.feature:nth-child(6) .feature-icon {
+  background: #eef0f8;
+}
+
+.feature-grid.feature-grid-cards .feature .number {
+  margin: 0;
+  color: #145d58;
+}
+
+.feature-grid.feature-grid-cards .feature h3 {
+  margin: .2rem 0 .55rem;
+}
+
+.feature-grid.feature-grid-cards .feature p {
+  font-size: .95rem;
+}
+
+.steps-grid.steps-grid-cards .step {
+  position: relative;
+  overflow: hidden;
+}
+
+.steps-grid.steps-grid-cards .step::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg,#237f78,#9dd1c8);
+}
+
+.steps-grid.steps-grid-cards .step-number {
+  margin: 0;
+  font-size: .75rem;
+}
+
+.steps-grid.steps-grid-cards .step h3 {
+  margin: .15rem 0 .55rem;
+}
+
+/* ==========================================================
+   RESPONSIVE · cambios por breakpoint al final
+   ========================================================== */

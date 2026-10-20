@@ -1,0 +1,36 @@
+/* ==========================================================
+   {name.upper()} · Estilos particulares de esta página
+   ========================================================== */
+
+/* ==========================================================
+   RESPONSIVE · cambios por breakpoint al final
+   ========================================================== */
+
+.faq-landing {
+  padding: 5rem 0;
+}
+
+.faq-landing h1 {
+  max-width: 14ch;
+}
+
+.faq-landing .lead {
+  max-width: 58ch;
+}
+
+.faq-topics {
+  max-width: 950px;
+}
+
+.faq-topic {
+  margin-bottom: 3.7rem;
+}
+
+.faq-topic h2 {
+  margin-bottom: 1.5rem;
+}
+
+.faq-topic .faq-list {
+  margin: 0;
+  max-width: none;
+}

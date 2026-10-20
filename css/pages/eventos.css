@@ -1,0 +1,93 @@
+/* ==========================================================
+   {name.upper()} · Estilos particulares de esta página
+   ========================================================== */
+
+.event-options-grid {
+  gap: 1rem;
+}
+
+.event-options-grid>.feature {
+  position: relative;
+  min-height: 205px;
+  background: #fff;
+  border: 1px solid #e0e4e9;
+  border-radius: 20px;
+  padding: 1.45rem;
+  box-shadow: 0 11px 28px rgba(21,34,56,.045);
+  transition: border-color .2s,transform .2s;
+}
+
+.event-options-grid>.feature:nth-child(1),.event-options-grid>.feature:nth-child(6) {
+  background: #fffaf8;
+  border-color: #f0e4e1;
+}
+
+.event-options-grid>.feature:nth-child(2),.event-options-grid>.feature:nth-child(5) {
+  background: #f8f7ff;
+  border-color: #ebeafa;
+}
+
+.event-options-grid>.feature:nth-child(3),.event-options-grid>.feature:nth-child(4) {
+  background: #f3f9f7;
+  border-color: #e3efeb;
+}
+
+.event-options-grid>.feature:hover {
+  transform: translateY(-2px);
+  border-color: #b6d3cb;
+}
+
+.event-feature-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-feature-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #f1e7e5;
+  color: #73555d;
+}
+
+.event-options-grid .feature:nth-child(2) .event-feature-icon,.event-options-grid .feature:nth-child(5) .event-feature-icon {
+  background: #e9e7fa;
+  color: #55528d;
+}
+
+.event-options-grid .feature:nth-child(3) .event-feature-icon,.event-options-grid .feature:nth-child(4) .event-feature-icon {
+  background: #deede8;
+  color: #145d58;
+}
+
+.event-feature-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.event-options-grid .feature .number {
+  margin: 0;
+  color: #3a6868;
+}
+
+.event-options-grid .feature h3 {
+  font-size: 1.25rem;
+  line-height: 1.24;
+  margin-bottom: .7rem;
+}
+
+.event-options-grid .feature p {
+  font-size: .96rem;
+  line-height: 1.65;
+}
+
+/* ==========================================================
+   RESPONSIVE · cambios por breakpoint al final
+   ========================================================== */

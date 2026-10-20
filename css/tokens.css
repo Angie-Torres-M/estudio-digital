@@ -1,0 +1,37 @@
+/* ========================================================
+   Estudio Digital · Sistema visual V1. Una identidad, tres servicios.
+   ======================================================== */
+
+:root {
+  color-scheme: light;
+  --ink: #152238;
+  --ink-soft: #34445a;
+  --muted: #5b697a;
+  --muted-on-dark: #c3d0dc;
+  --paper: #f7f8fa;
+  --white: #fff;
+  --teal: #237f78;
+  --teal-dark: #145d58;
+  --teal-pale: #e2f0ec;
+  --rose: #f5eae5;
+  --lavender: #eae9fa;
+  --line: #dbe1e7;
+  --line-dark: rgba(255,255,255,.19);
+  --shadow-soft: 0 15px 44px rgba(21,34,56,.07);
+  --shadow-frame: 0 28px 68px rgba(21,34,56,.16);
+  --font-body: "Aptos","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --font-editorial: Georgia,"Times New Roman",serif;
+  --text-xs: .875rem;
+  --text-sm: .9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: clamp(1.13rem,1.3vw,1.27rem);
+  --h1: clamp(2.5rem,4.4vw,3.65rem);
+  --h2: clamp(1.95rem,2.9vw,2.7rem);
+  --h3: clamp(1.3rem,2vw,1.66rem);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --container: 1180px;
+  --space-section: clamp(4.25rem,8vw,7.5rem);
+}

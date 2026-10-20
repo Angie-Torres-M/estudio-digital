@@ -1,0 +1,58 @@
+/* ========================================================
+   V1.6 · Restitución selectiva. No cambia el contenido profesional existente.
+   ======================================================== *//* ========================================================
+   Hero: conserva sólo aquí los dos mockups ilustrados de V1.4.
+   ======================================================== *//* ========================================================
+   Servicios: recuperar las tres tarjetas aprobadas de V1.3 sin sus adornos V1.4.
+   ======================================================== *//* ========================================================
+   Proyectos: capturas reales de Maíz Fundido y FunOnTrip; enlace legible en superficie clara.
+   ======================================================== *//* ========================================================
+   Eventos: misma información original, ahora sí en tarjetas suaves y con iconos.
+   ======================================================== */@media (max-width:860px) {
+  .additional-work img {
+    width: 140px;
+  }
+
+  .invitation-work {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1.2rem;
+  }
+}@media (max-width:680px) {
+  .hero-stage.hero-stage-illustrated .stage-primary {
+    width: 94%;
+  }
+
+  .hero-stage.hero-stage-illustrated .stage-secondary {
+    width: 72%;
+    bottom: 0;
+  }
+
+  .project-grid .project-image {
+    padding: 1rem;
+  }
+
+  .project-grid .project-body {
+    padding: 1.35rem;
+  }
+
+  .additional-work {
+    padding: 1.1rem 0;
+  }
+
+  .additional-work img {
+    width: 100%;
+    max-height: 190px;
+  }
+
+  .invitation-work {
+    grid-template-columns: 1fr;
+    gap: .9rem;
+  }
+
+  .event-options-grid>.feature {
+    min-height: auto;
+    padding: 1.35rem;
+  }
+}/* ========================================================
+   La etiqueta de Eventos se presenta sobre azul tinta.
+   ======================================================== */

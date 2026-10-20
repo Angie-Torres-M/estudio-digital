@@ -1,0 +1,121 @@
+/* ========================================================
+   Estudio Digital · Ajustes visuales V1.4
+   - Ilustraciones editoriales para home y negocios
+   - Proyectos y servicios con lenguaje más conceptual
+   - Modal de contacto orientada a Gmail
+   ======================================================== */.site-nav .nav-services-toggle {
+  line-height: 1;
+}.site-nav .nav-services-toggle .nav-chevron {
+  margin-top: -1px;
+}/* ========================================================
+   Home hero and service cards
+   ======================================================== */.service-card {
+  position: relative;
+  overflow: hidden;
+}.service-card h3 {
+  max-width: 11ch;
+}.service-card p {
+  max-width: 31ch;
+}/* ========================================================
+   Project gallery refresh
+   ======================================================== */.projects-top {
+  margin-bottom: 2.4rem;
+}.project-card {
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 14px 36px rgba(5,19,36,.12);
+  background: rgba(255,255,255,.98);
+}/* ========================================================
+   Business page illustrations
+   ======================================================== *//* ========================================================
+   Feature and process cards with icons
+   ======================================================== *//* ========================================================
+   Contact modal: Gmail-first cards
+   ======================================================== */.contact-mode .contact-shortcuts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+  width: 100%;
+}.contact-shortcut {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  padding: 1rem 1rem;
+  border-radius: 18px;
+  text-decoration: none;
+  text-align: left;
+}.contact-shortcut .shortcut-copy {
+  display: flex;
+  flex-direction: column;
+  gap: .18rem;
+  min-width: 0;
+}.contact-shortcut strong {
+  font-size: 1rem;
+  line-height: 1.2;
+}.contact-shortcut small {
+  font-size: .79rem;
+  line-height: 1.45;
+  opacity: .92;
+}.shortcut-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex: none;
+}.shortcut-icon svg {
+  width: 22px;
+  height: 22px;
+}.contact-shortcut.is-gmail {
+  background: #152238;
+  color: #fff;
+  border: 1px solid #152238;
+}.contact-shortcut.is-gmail .shortcut-icon {
+  background: #fff;
+  color: #152238;
+}.contact-shortcut.is-copy {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid #cfd9df;
+}.contact-shortcut.is-copy .shortcut-icon {
+  background: #e7f0ed;
+  color: var(--teal-dark);
+}.contact-shortcut:hover {
+  transform: translateY(-2px);
+}.contact-shortcut[disabled] {
+  opacity: 1;
+}.contact-info-note {
+  margin-top: .35rem;
+}.copy-status {
+  font-size: .8rem;
+}@media (max-width:860px) {
+  .invitation-work {
+    grid-template-columns: 1fr;
+  }
+}@media (max-width:680px) {
+  .hero-stage.hero-stage-illustrated .stage-primary {
+    width: 96%;
+    left: 0;
+  }
+
+  .hero-stage.hero-stage-illustrated .stage-secondary {
+    width: 74%;
+    right: 0;
+    bottom: -1%;
+  }
+
+  .service-visual {
+    height: 112px;
+  }
+
+  .project-pills {
+    margin-bottom: .85rem;
+  }
+
+  .invitation-work {
+    padding: .9rem;
+  }
+
+  .feature-grid.feature-grid-cards .feature,.steps-grid.steps-grid-cards .step {
+    padding: 1.15rem;
+  }
+}

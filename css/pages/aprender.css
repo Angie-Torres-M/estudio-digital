@@ -1,0 +1,85 @@
+/* ==========================================================
+   {name.upper()} · Estilos particulares de esta página
+   ========================================================== */
+
+/* ==========================================================
+   RESPONSIVE · cambios por breakpoint al final
+   ========================================================== */
+
+.page-hero-learning {
+  background: #efedf9;
+}
+
+.learning-visual {
+  background: #e0dcf1;
+  border-radius: 24px;
+  padding: 1.3rem;
+  position: relative;
+}
+
+.learning-caption {
+  padding: 1.05rem 1.2rem .15rem;
+  color: var(--ink-soft);
+  font-size: .81rem;
+  font-weight: 650;
+}
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 1.2rem;
+}
+
+.curriculum-card {
+  border-radius: 19px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 2rem;
+}
+
+.curriculum-card .module {
+  color: var(--teal-dark);
+  font-weight: 800;
+  letter-spacing: .08em;
+  font-size: .76rem;
+  text-transform: uppercase;
+}
+
+.curriculum-card h3 {
+  margin: .95rem 0 .65rem;
+}
+
+.curriculum-card p {
+  color: var(--muted);
+  font-size: .96rem;
+  margin: 0;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 1rem;
+}
+
+.method-step {
+  border-top: 2px solid var(--teal);
+  padding-top: 1.05rem;
+}
+
+.method-step strong {
+  display: block;
+  font-size: 1.14rem;
+  margin: .45rem 0 .55rem;
+}
+
+.method-step span {
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.method-step p {
+  font-size: .92rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
