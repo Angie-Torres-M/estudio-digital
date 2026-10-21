@@ -7,7 +7,8 @@
     negocio: {label:'Página web para negocio', subject:'Cotización de página web',message:'Hola, me interesa solicitar información sobre el desarrollo de una página web para mi negocio.'},
     evento: {label:'Invitación y evento',subject:'Consulta sobre invitación digital',message:'Hola, me gustaría recibir información sobre una invitación digital personalizada.'},
     programacion: {label:'Curso de programación',subject:'Información del curso y clase muestra',message:'Hola, me interesa conocer el curso de desarrollo web y la clase muestra gratuita.'},
-    general: {label:'Consulta general',subject:'Consulta de servicios digitales',message:'Hola, me gustaría contarte una idea y conocer tus servicios digitales.'}
+    general: {label:'Consulta general',subject:'Consulta de servicios digitales',message:'Hola, me gustaría contarte una idea y conocer tus servicios digitales.'},
+    disponibilidad: {label:'Consulta de disponibilidad',subject:'Disponibilidad para un proyecto o curso',message:'Hola, me gustaría consultar la disponibilidad para un proyecto digital, invitación o curso. ¿Podrías indicarme los próximos pasos?'}
   };
   const credentials = window.ESTUDIO_EMAILJS || {};
   const emailjsReady = Boolean(credentials.serviceId?.trim() && credentials.templateId?.trim() && credentials.publicKey?.trim());
@@ -32,6 +33,10 @@
   function setContext(which) {
     context = REQUESTS[which] ? which : 'general';
     if (gmail) gmail.href = composeUrl(context);
+    document.querySelectorAll('[data-interest]').forEach((button) => {
+      const selected = button.dataset.interest === context;
+      button.setAttribute('aria-pressed', String(selected));
+    });
     if (form) {
       const select = form.elements.namedItem('service');
       if (select) select.value=context;
@@ -49,6 +54,11 @@
     setContext(which);
     dialog.showModal();
   }
+  // Selección de motivo en el diálogo de Gmail (sin envíos simulados).
+  dialog?.querySelectorAll('[data-interest]').forEach((button) => {
+    button.addEventListener('click', () => setContext(button.dataset.interest));
+  });
+
   document.querySelectorAll('a[data-contact]').forEach(link=>{
     link.addEventListener('click',(event)=>{
       event.preventDefault();

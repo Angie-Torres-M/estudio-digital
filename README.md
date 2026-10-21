@@ -92,3 +92,29 @@ El archivo `_redirects` es para Cloudflare Pages, no para GitHub Pages. Enlaces
 internos usan directamente los archivos `.html`.
 
 Se incluye `.nojekyll` para servir el contenido estático sin procesarlo con Jekyll.
+
+
+## V2.3 · Ajustes UX/UI en `develop` (pendientes de publicación)
+
+- Header fijo, ocultación al bajar y reaparición al subir; el enlace **Hablemos** abre el diálogo de contacto.
+- Selección de interés para redactar un correo por Gmail web, incluida **consulta de disponibilidad**. Esta consulta **no comprueba cupos o agenda en tiempo real**.
+- Inicio: sección FAQ más compacta y semblanza con herramientas de CI/CD y despliegue, presentadas a nivel práctico.
+- Negocios: dos demostraciones visuales identificadas como **imágenes generadas con IA**, separadas de los proyectos reales. Idea promocional de 10 llaveros 3D **sin condiciones comerciales confirmadas**.
+- Eventos: galería separada con conceptos de invitación/recuerdos generados con IA e inspiraciones externas; la carga colaborativa de fotografías y RSVP automatizado **no están implementados**. Se conserva la galería de productos reales de Maíz Fundido.
+- Aprender: galería didáctica de tecnologías y herramientas tentativas con ilustraciones propias (no logotipos oficiales). Su uso está sujeto a confirmación del programa y condiciones de cada servicio.
+- No incluye pagos, disponibilidad automatizada, carga de fotos ni envíos directos de EmailJS hasta configurar las credenciales públicas.
+
+**Fuente visual:** `assets/conceptos/` contiene imágenes generadas con IA extraídas del ZIP que proporcionaste. `assets/eventos/` mantiene las fotografías de productos reales previamente aportadas. No intercambiar etiquetas de procedencia.
+
+
+## Ajustes V2.5 · Capturas reales de Maíz Fundido
+
+- **Inicio:** dos screenshots de la landing (modo claro y oscuro), con enlace al sitio público.
+- **Negocios:** portada real del e-commerce y galería con panel de administración,
+  catálogo, centro de ayuda y página institucional.
+- El e-commerce está en desarrollo: no se presenta como producto comercial concluido.
+- Una tienda puede ser administrable, pero módulos como inventario, pedidos, pagos,
+  promociones, roles e integraciones **no están incluidos automáticamente**:
+  se cotizan según alcance, complejidad y presupuesto.
+- Imágenes de autoría del proyecto facilitadas por Angie Torres (octubre de 2026).
+- Se conservan los carruseles de Eventos, los estilos de Aprender, el contacto y Chewie Dev.
