@@ -1,5 +1,5 @@
 /* ==========================================================
-   {name.upper()} · Estilos particulares de esta página
+   APRENDER · Estilos particulares de esta página
    ========================================================== */
 
 /* ==========================================================
@@ -82,4 +82,253 @@
   color: var(--muted);
   line-height: 1.55;
   margin: 0;
+}
+
+/* ================================================================
+   HERO EDUCATIVO · código real presentado con espacios estables
+   ================================================================ */
+.learning-visual,
+.code-window,
+.code-content {
+  min-width: 0;
+}
+
+.learning-visual .code-content {
+  padding: 1.45rem;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.code-lines {
+  margin: 0;
+  font: 500 clamp(.76rem, 1.4vw, .95rem) / 1.75 ui-monospace, Consolas, monospace;
+  color: #e1edf7;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.code-lines code {
+  font: inherit;
+}
+
+.code-lines .comment {
+  color: #91cbb9;
+}
+
+/* ================================================================
+   RESPONSIVE · Aprender
+   ================================================================ */
+
+/* ================================================================
+   V2.3 · HERRAMIENTAS DIDÁCTICAS POTENCIALES
+   ================================================================ */
+.course-tools-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:2rem; }
+.course-tool-card { background:#fff; border:1px solid #e0e5eb; border-radius:18px; display:flex; gap:.85rem; padding:1.15rem; min-width:0; }
+.course-tool-card h3 { font-size:1.1rem; margin:.5rem 0 .5rem; overflow-wrap:anywhere; }
+.course-tool-card p { font-size:.88rem; color:var(--muted); line-height:1.6; margin:0 0 .5rem; }
+.course-tool-card a { color:#176a63; font-weight:700; font-size:.82rem; }
+.course-tool-card .mini-tag { font-size:.67rem; letter-spacing:.08em; }
+.tool-mark { display:grid; place-items:center; flex:0 0 45px; width:45px; height:45px; border-radius:13px; font-weight:850; font-size:.97rem; background:#e5f0ec; color:#145d58; }
+.mark-codeorg { background:#e9eefb; color:#435f9a; }
+.mark-p5 { background:#f8e7ec; color:#994a5d; }
+.mark-fcc { background:#ecedf5; color:#515c79; }
+.mark-ai { background:#eaf4ec; color:#397456; }
+.mark-git { background:#f7eee8; color:#985f42; }
+.toolkit-note { margin:1.3rem 0 0; max-width:83ch; font-size:.91rem; color:var(--muted); }
+
+/* Tecnología base · pictogramas SVG originales (no logos oficiales) */
+.course-stack-visual { margin: 1.5rem 0 1.8rem; width: min(100%, 650px); }
+.course-stack-visual img { display:block; width:100%; height:auto; border-radius:20px; border:1px solid #e5e9ec; }
+.course-stack-visual figcaption { font-size:.81rem; color:var(--muted); padding:.6rem 0 0; }
+
+@media (max-width: 680px) {
+  /* Métricas visibles de un vistazo, sin apilar tres bloques altos. */
+  .facts-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .facts-strip .fact {
+    padding: .9rem .35rem;
+    border-right: 1px solid var(--line);
+    text-align: center;
+    min-width: 0;
+  }
+
+  .facts-strip .fact strong {
+    font-size: clamp(1.1rem, 5vw, 1.55rem);
+  }
+
+  .facts-strip .fact span {
+    font-size: .71rem;
+    overflow-wrap: normal;
+    line-height: 1.35;
+    display: block;
+  }
+
+  .facts-strip .fact:last-child {
+    border-right: 0;
+  }
+
+  .learning-visual {
+    padding: .7rem;
+    border-radius: 18px;
+  }
+
+  .learning-visual .code-content {
+    padding: 1.05rem .85rem;
+  }
+
+  .code-lines {
+    font-size: clamp(.64rem, 2.65vw, .82rem);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+  }
+
+  .learning-caption {
+    font-size: .76rem;
+    padding-inline: .5rem;
+  }
+
+  /* Dos bloques por fila: preserva todo el contenido sin carrusel. */
+  .curriculum-grid,
+  .method-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .65rem;
+  }
+
+  .curriculum-card {
+    padding: 1.05rem .85rem;
+    min-width: 0;
+    border-radius: 15px;
+  }
+
+  .curriculum-card .module {
+    font-size: .68rem;
+  }
+
+  .curriculum-card h3 {
+    font-size: 1rem;
+    line-height: 1.24;
+    overflow-wrap: normal;
+  }
+
+  .curriculum-card p {
+    font-size: .82rem;
+    line-height: 1.55;
+  }
+
+  .method-step {
+    min-width: 0;
+    padding: .85rem .8rem;
+    border-radius: 13px;
+    background: #f3f7f6;
+    border-top: 3px solid var(--teal-dark);
+  }
+
+  .method-step strong {
+    font-size: 1rem;
+    overflow-wrap: normal;
+    line-height: 1.25;
+  }
+
+  .method-step p {
+    font-size: .81rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 350px) {
+  .curriculum-grid,
+  .method-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
+/* ================================================================
+   RESPONSIVE · V2.3 Aprender
+   ================================================================ */
+@media (max-width:1080px) {
+ .course-tools-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:680px) {
+ .course-tools-grid { grid-template-columns:minmax(0,1fr); }
+ .course-tool-card { padding:1rem; }
+}
+
+
+/* ================================================================
+   V2.4 · AJUSTES RESPONSIVE APRENDER
+   ================================================================ */
+.learning-toolkit .section-intro p { max-width: 62ch; }
+.course-stack-visual {
+  width: min(100%, 760px);
+  margin: 1.5rem auto 1.8rem;
+}
+.course-stack-visual img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.course-tools-grid {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  align-items: stretch;
+}
+.course-tool-card {
+  min-height: 100%;
+}
+.toolkit-note {
+  margin: 1.35rem 0 0;
+  max-width: 80ch;
+  padding: 1rem 1.1rem;
+  border: 1px solid #e2e8eb;
+  background: #f5f8f9;
+  border-radius: 16px;
+  overflow-wrap: anywhere;
+}
+.toolkit-note p {
+  margin: 0;
+  font-size: .93rem;
+  line-height: 1.75;
+}
+.toolkit-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: .9rem;
+}
+.toolkit-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: .6rem .85rem;
+  border-radius: 999px;
+  border: 1px solid #cfe0da;
+  background: #fff;
+  color: #176a63;
+  font-size: .84rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.toolkit-links a:hover {
+  background: #e7f2ef;
+  border-color: #2e7d73;
+}
+
+@media (max-width: 1080px) {
+  .course-tools-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 760px) {
+  .course-stack-visual { width: 100%; }
+  .course-tools-grid { grid-template-columns: minmax(0,1fr); }
+  .toolkit-note { padding: .95rem .95rem; }
+  .toolkit-links { gap: .5rem; }
+  .toolkit-links a { width: 100%; justify-content: flex-start; }
+}
+@media (max-width: 420px) {
+  .toolkit-note p { font-size: .89rem; }
 }

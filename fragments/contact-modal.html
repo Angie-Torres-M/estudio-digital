@@ -1,124 +1,227 @@
-<dialog aria-describedby="dialog-intro" aria-labelledby="dialog-title" class="contact-dialog" id="contact-dialog">
- <div class="dialog-shell">
-  <div class="dialog-top">
-   <span class="dialog-eyebrow">
-    HABLEMOS DE TU IDEA
-   </span>
-   <button aria-label="Cerrar ventana de contacto" class="dialog-close" data-dialog-close type="button">
-    &times;
-   </button>
-  </div>
-  <h2 id="dialog-title">
-   Cu&eacute;ntame qu&eacute; tienes en mente.
-  </h2>
-  <p id="dialog-intro">
-   Elige c&oacute;mo prefieres iniciar la conversaci&oacute;n. Te responder&eacute; personalmente.
-  </p>
-  <div class="contact-mode" data-emailjs-ready hidden>
-   <form id="contact-form" novalidate>
-    <div class="contact-field-row">
-     <label>
-      Tu nombre
-      <input autocomplete="name" maxlength="100" name="from_name" placeholder="&iquest;C&oacute;mo te llamas?" required>
-     </label>
-     <label>
-      Tu correo
-      <input autocomplete="email" maxlength="180" name="reply_to" placeholder="tu@correo.com" required type="email">
-     </label>
+<dialog
+  aria-describedby="dialog-intro"
+  aria-labelledby="dialog-title"
+  class="contact-dialog"
+  id="contact-dialog"
+>
+  <div class="dialog-shell">
+    <div class="dialog-top">
+      <span class="dialog-eyebrow"> HABLEMOS DE TU IDEA </span>
+      <button
+        aria-label="Cerrar ventana de contacto"
+        class="dialog-close"
+        data-dialog-close=""
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-width="2"
+          viewbox="0 0 24 24"
+        >
+          <path d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
+      </button>
     </div>
-    <label>
-     Servicio que te interesa
-     <select name="service" required>
-      <option value="general">
-       Consulta general
-      </option>
-      <option value="negocio">
-       P&aacute;gina web para negocio
-      </option>
-      <option value="evento">
-       Invitaci&oacute;n y evento
-      </option>
-      <option value="programacion">
-       Curso de programaci&oacute;n
-      </option>
-     </select>
-    </label>
-    <label>
-     Tu mensaje
-     <textarea maxlength="2000" minlength="12" name="message" placeholder="Cu&eacute;ntame un poco sobre lo que necesitas..." required rows="4"></textarea>
-    </label>
-    <label class="contact-privacy">
-     <input name="consent" required type="checkbox">
-     Acepto que utilices estos datos &uacute;nicamente para responder mi consulta por correo.
-    </label>
-    <div aria-hidden="true" class="contact-honeypot">
-     <label>
-      Sitio web
-      <input autocomplete="off" name="website" tabindex="-1">
-     </label>
+    <h2 id="dialog-title">Cuéntame qué tienes en mente.</h2>
+    <p id="dialog-intro">
+      Elige cómo prefieres iniciar la conversación. Te responderé personalmente.
+    </p>
+    <div class="contact-mode" data-emailjs-ready="" hidden="">
+      <form id="contact-form" novalidate="">
+        <div class="contact-field-row">
+          <label>
+            Tu nombre
+            <input
+              autocomplete="name"
+              maxlength="100"
+              name="from_name"
+              placeholder="¿Cómo te llamas?"
+              required=""
+            />
+          </label>
+          <label>
+            Tu correo
+            <input
+              autocomplete="email"
+              maxlength="180"
+              name="reply_to"
+              placeholder="tu@correo.com"
+              required=""
+              type="email"
+            />
+          </label>
+        </div>
+        <label>
+          Servicio que te interesa
+          <select name="service" required="">
+            <option value="general">Consulta general</option>
+            <option value="negocio">Página web para negocio</option>
+            <option value="evento">Invitación y evento</option>
+            <option value="programacion">Curso de programación</option>
+            <option value="disponibilidad">Consultar disponibilidad</option>
+          </select>
+        </label>
+        <label>
+          Tu mensaje
+          <textarea
+            maxlength="2000"
+            minlength="12"
+            name="message"
+            placeholder="Cuéntame un poco sobre lo que necesitas..."
+            required=""
+            rows="4"
+          ></textarea>
+        </label>
+        <label class="contact-privacy">
+          <input name="consent" required="" type="checkbox" />
+          Acepto que utilices estos datos únicamente para responder mi consulta
+          por correo.
+        </label>
+        <div aria-hidden="true" class="contact-honeypot">
+          <label>
+            Sitio web
+            <input autocomplete="off" name="website" tabindex="-1" />
+          </label>
+        </div>
+        <button class="btn btn-primary contact-send" type="submit">
+          Enviar consulta
+          <span aria-hidden="true"> ↗ </span>
+        </button>
+        <p
+          aria-live="polite"
+          class="form-status"
+          id="form-status"
+          role="status"
+        ></p>
+        <p class="contact-fineprint">
+          El formulario usa EmailJS para entregar tu mensaje. No envíes
+          contraseñas ni datos sensibles.
+        </p>
+      </form>
     </div>
-    <button class="btn btn-primary contact-send" type="submit">
-     Enviar consulta
-     <span aria-hidden="true">
-      &nearrow;
-     </span>
-    </button>
-    <p aria-live="polite" class="form-status" id="form-status" role="status">
-    </p>
-    <p class="contact-fineprint">
-     El formulario usa EmailJS para entregar tu mensaje. No env&iacute;es contrase&ntilde;as ni datos sensibles.
-    </p>
-   </form>
+    <div class="contact-mode" data-emailjs-pending="">
+      <p class="contact-info-note">
+        ¿Qué te gustaría crear o consultar? Elige una opción y te prepararé un
+        mensaje para Gmail.
+      </p>
+      <fieldset aria-label="Tipo de consulta" class="contact-interest">
+        <legend>Me interesa…</legend>
+        <div
+          aria-label="Seleccionar motivo del mensaje"
+          class="contact-interest-options"
+          role="group"
+        >
+          <button class="interest-option" data-interest="negocio" type="button">
+            Una página web
+          </button>
+          <button class="interest-option" data-interest="evento" type="button">
+            Una invitación
+          </button>
+          <button
+            class="interest-option"
+            data-interest="programacion"
+            type="button"
+          >
+            El curso
+          </button>
+          <button
+            class="interest-option"
+            data-interest="disponibilidad"
+            type="button"
+          >
+            Consultar disponibilidad
+          </button>
+        </div>
+      </fieldset>
+      <div class="contact-shortcuts">
+        <a
+          class="contact-shortcut is-gmail"
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1"
+          id="compose-gmail"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span class="shortcut-icon">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <path
+                d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5C20.22 5 21 5.78 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm2.2.26v10.15h1.8v-8l5 3.85 5-3.85v8h1.8V7.01L12 12.28 5.2 7.01Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          <span class="shortcut-copy">
+            <strong> Redactar en Gmail </strong>
+            <small>
+              Abre Gmail web con el asunto y el mensaje sugerido según el
+              servicio.
+            </small>
+          </span>
+        </a>
+        <button
+          class="contact-shortcut is-copy copy-contact"
+          data-copy-email=""
+          type="button"
+        >
+          <span class="shortcut-icon">
+            <svg aria-hidden="true" viewbox="0 0 24 24">
+              <rect height="10" rx="2" width="10" x="9" y="9"></rect>
+              <rect height="10" rx="2" width="10" x="5" y="5"></rect>
+            </svg>
+          </span>
+          <span class="shortcut-copy">
+            <strong> Copiar dirección de correo </strong>
+            <small>
+              Úsalo si prefieres escribir desde otro servicio o guardar mi
+              correo.
+            </small>
+          </span>
+        </button>
+      </div>
+      <p
+        aria-live="polite"
+        class="copy-status"
+        data-copy-status=""
+        role="status"
+      ></p>
+      <p class="contact-fineprint">
+        Gmail web requiere una cuenta. Si prefieres otro correo, copia mi
+        dirección. El formulario directo todavía no está habilitado.
+      </p>
+    </div>
+    <div aria-label="Redes y portafolio" class="dialog-socials">
+      <p class="dialog-socials-title">
+        Si prefieres, también puedes asomarte por aquí:
+      </p>
+      <div class="dialog-social-links">
+        <a
+          href="https://github.com/Angie-Torres-M"
+          rel="noopener noreferrer"
+          target="_blank"
+          >GitHub ↗</a
+        >
+        <a
+          href="https://www.linkedin.com/in/angietorresm"
+          rel="noopener noreferrer"
+          target="_blank"
+          >LinkedIn ↗</a
+        >
+        <a
+          href="https://www.instagram.com/angies__torres/"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Instagram ↗</a
+        >
+        <a
+          href="https://angie-torres-m.github.io/MiPortafolio/"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Portafolio ↗</a
+        >
+      </div>
+    </div>
+    <p class="dialog-email">angelica.m.torres.morales@gmail.com</p>
   </div>
-  <div class="contact-mode" data-emailjs-pending>
-   <p class="contact-info-note">
-    Puedes escribir desde Gmail web, sin configurar una aplicaci&oacute;n de correo en Windows.
-   </p>
-   <div class="contact-shortcuts">
-    <a class="contact-shortcut is-gmail" href="https://mail.google.com/mail/?view=cm&fs=1" id="compose-gmail" rel="noopener noreferrer" target="_blank">
-     <span class="shortcut-icon">
-      <svg aria-hidden="true" viewbox="0 0 24 24">
-       <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5C20.22 5 21 5.78 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm2.2.26v10.15h1.8v-8l5 3.85 5-3.85v8h1.8V7.01L12 12.28 5.2 7.01Z" fill="currentColor">
-       </path>
-      </svg>
-     </span>
-     <span class="shortcut-copy">
-      <strong>
-       Redactar en Gmail
-      </strong>
-      <small>
-       Abre Gmail web con el asunto y el mensaje sugerido seg&uacute;n el servicio.
-      </small>
-     </span>
-    </a>
-    <button class="contact-shortcut is-copy copy-contact" data-copy-email type="button">
-     <span class="shortcut-icon">
-      <svg aria-hidden="true" viewbox="0 0 24 24">
-       <rect height="10" rx="2" width="10" x="9" y="9">
-       </rect>
-       <rect height="10" rx="2" width="10" x="5" y="5">
-       </rect>
-      </svg>
-     </span>
-     <span class="shortcut-copy">
-      <strong>
-       Copiar direcci&oacute;n de correo
-      </strong>
-      <small>
-       &Uacute;salo si prefieres escribir desde otro servicio o guardar mi correo.
-      </small>
-     </span>
-    </button>
-   </div>
-   <p aria-live="polite" class="copy-status" data-copy-status role="status">
-   </p>
-   <p class="contact-fineprint">
-    Gmail requiere iniciar sesi&oacute;n. Si despu&eacute;s quieres usar EmailJS, ya est&aacute; listo para activarse sin cambiar el dise&ntilde;o.
-   </p>
-  </div>
-  <p class="dialog-email">
-   angelica.m.torres.morales@gmail.com
-  </p>
- </div>
 </dialog>
-

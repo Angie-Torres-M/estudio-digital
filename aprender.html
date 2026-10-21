@@ -1,425 +1,541 @@
-<!DOCTYPE html>
-<html lang="es-MX">
- <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <title>
-   Curso de desarrollo web desde cero | Angie Torres
-  </title>
-  <meta content="Curso online en preparaci&oacute;n: HTML, CSS, JavaScript e IA como apoyo. 12 sesiones, 24 horas y clase muestra gratuita, con fechas por definir." name="description">
-  <meta content="#f7f8fa" name="theme-color">
-  <meta content="website" property="og:type">
-  <meta content="es_MX" property="og:locale">
-  <meta content="Curso de desarrollo web desde cero | Angie Torres" property="og:title">
-  <meta content="Curso online en preparaci&oacute;n: HTML, CSS, JavaScript e IA como apoyo. 12 sesiones, 24 horas y clase muestra gratuita, con fechas por definir." property="og:description">
-  <link href="./assets/chewie/chewie-long.ico" rel="icon" type="image/x-icon">
-  <link href="./assets/chewie/chewie-long-48.png" rel="icon" sizes="48x48" type="image/png">
-  <link href="./assets/chewie/chewie-long-180.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="./css/tokens.css" rel="stylesheet">
-  <link href="./css/global.css" rel="stylesheet">
-  <link href="./css/components.css" rel="stylesheet">
-  <link href="./css/chewie-v13.css" rel="stylesheet">
-  <link href="./css/visual-refresh-v14.css" rel="stylesheet">
-  <link href="./css/restore-v16.css" rel="stylesheet">
-  <link href="./css/pages/aprender.css" rel="stylesheet">
-  <script defer src="./js/emailjs-config.js">
-  </script>
-  <script defer src="./js/shared-layout.js">
-  </script>
- </head>
- <body data-page="aprender">
-  <a class="skip-link" href="#contenido">
-   Saltar al contenido
-  </a>
-  <div id="shared-header">
-  </div>
-  <div id="shared-backdrop">
-  </div>
-  <main id="contenido">
-   <!-- Sección: page-hero · page-hero-learning -->
-   <section aria-labelledby="learn-title" class="page-hero page-hero-learning">
-    <div class="container page-hero-grid">
-     <div>
-      <p class="kicker">
-       Curso online &middot; Primera generaci&oacute;n en preparaci&oacute;n
-      </p>
-      <h1 id="learn-title">
-       No s&oacute;lo aprendas c&oacute;digo.
-       <span class="editorial">
-        Crea algo que funcione.
-       </span>
-      </h1>
-      <p class="lead">
-       Descubre el desarrollo web construyendo proyectos, resolviendo retos y utilizando la inteligencia artificial como una herramienta para pensar mejor, no para dejar de pensar.
-      </p>
-      <div class="btn-row">
-       <a class="btn btn-primary" data-contact="programacion" href="#contacto">
-        Solicitar clase muestra
-        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
-         <path d="M5 12h14m-6-6 6 6-6 6">
-         </path>
-        </svg>
-       </a>
-       <a class="btn btn-outline" href="#contenido-curso">
-        Explorar el contenido
-        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
-         <path d="M5 12h14m-6-6 6 6-6 6">
-         </path>
-        </svg>
-       </a>
-      </div>
-      <p class="hero-meta">
-       HTML &middot; CSS &middot; JavaScript &middot; IA como apoyo
-      </p>
-     </div>
-     <div aria-label="Ilustraci&oacute;n tipogr&aacute;fica de una pr&aacute;ctica de JavaScript, no un editor funcional" class="learning-visual">
-      <div class="code-window">
-       <div aria-hidden="true" class="window-top">
-        <i>
-        </i>
-        <i>
-        </i>
-        <i>
-        </i>
-        <span>
-         mi-primera-app.js
-        </span>
-       </div>
-       <div class="code-content">
-        <span class="violet">
-         const
-        </span>
-        idea =
-        <span class="peach">
-         "Mi primera web"
-        </span>
-        ;
-        <span class="violet">
-         function
-        </span>
-        <span class="mint">
-         crear
-        </span>
-        () {
-        <span class="violet">
-         return
-        </span>
-        <span class="peach">
-         "&iexcl;Lo hice funcionar!"
-        </span>
-        ;
-}
-        <span class="mint">
-         crear
-        </span>
-        ();
-        <span class="peach">
-         // empieza aqu&iacute;
-        </span>
-       </div>
-      </div>
-      <p class="learning-caption">
-       Aprender creando &middot; Un paso a la vez
-      </p>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: section-compact · section-white -->
-   <section class="section-compact section-white">
-    <div class="container">
-     <div aria-label="Datos del curso piloto" class="facts-strip">
-      <div class="fact">
-       <strong>
-        12
-       </strong>
-       <span>
-        sesiones en vivo
-       </span>
-      </div>
-      <div class="fact">
-       <strong>
-        24 h
-       </strong>
-       <span>
-        de pr&aacute;ctica guiada
-       </span>
-      </div>
-      <div class="fact">
-       <strong>
-        100%
-       </strong>
-       <span>
-        online &middot; grupos peque&ntilde;os
-       </span>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: section -->
-   <section aria-labelledby="learn-intro" class="section">
-    <div class="container intro-columns">
-     <div>
-      <p class="kicker">
-       Para empezar desde cero
-      </p>
-      <h2 id="learn-intro">
-       No necesitas saber programar
-       <span class="editorial">
-        para comenzar.
-       </span>
-      </h2>
-     </div>
-     <div>
-      <p class="lead">
-       El curso est&aacute; pensado para adolescentes, j&oacute;venes y adultos sin experiencia previa. Aprenderemos a construir interfaces, darles comportamiento y resolver problemas con l&oacute;gica.
-      </p>
-      <p class="muted">
-       La idea no es memorizar un lenguaje: es comprender qu&eacute; est&aacute;s haciendo, detectar errores y terminar con una peque&ntilde;a aplicaci&oacute;n web que puedas modificar y publicar.
-      </p>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: contenido-curso -->
-   <section aria-labelledby="curriculum-title" class="section section-white anchor-offset" id="contenido-curso">
-    <div class="container">
-     <div class="section-intro">
-      <p class="kicker">
-       Lo que exploraremos
-      </p>
-      <h2 id="curriculum-title">
-       De una p&aacute;gina vac&iacute;a a
-       <span class="editorial">
-        un proyecto propio.
-       </span>
-      </h2>
-      <p>
-       Una ruta de aprendizaje por proyectos, con retos pr&aacute;cticos desde las primeras clases.
-      </p>
-     </div>
-     <div class="curriculum-grid">
-      <div class="curriculum-card">
-       <span class="module">
-        Bloque 01
-       </span>
-       <h3>
-        Tu primera interfaz
-       </h3>
-       <p>
-        Estructura con HTML, estilos con CSS, organizaci&oacute;n de archivos y uso b&aacute;sico de VS Code.
-       </p>
-      </div>
-      <div class="curriculum-card">
-       <span class="module">
-        Bloque 02
-       </span>
-       <h3>
-        Que las cosas pasen
-       </h3>
-       <p>
-        JavaScript, eventos, variables y funciones para agregar interacci&oacute;n a la web.
-       </p>
-      </div>
-      <div class="curriculum-card">
-       <span class="module">
-        Bloque 03
-       </span>
-       <h3>
-        Aprender a resolver
-       </h3>
-       <p>
-        Condiciones, ciclos, arreglos, objetos, diagramas y depuraci&oacute;n aplicados a retos sencillos.
-       </p>
-      </div>
-      <div class="curriculum-card">
-       <span class="module">
-        Bloque 04
-       </span>
-       <h3>
-        Tu proyecto publicado
-       </h3>
-       <p>
-        Integrar una aplicaci&oacute;n web peque&ntilde;a, revisar su funcionamiento y compartirla en internet.
-       </p>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: section -->
-   <section aria-labelledby="method-title" class="section">
-    <div class="container">
-     <div class="section-intro">
-      <p class="kicker">
-       Mi manera de ense&ntilde;ar
-      </p>
-      <h2 id="method-title">
-       Entender, practicar
-       <br>
-       <span class="editorial">
-        y volver a intentar.
-       </span>
-      </h2>
-      <p>
-       Combino mi experiencia como desarrolladora con mi formaci&oacute;n de Maestr&iacute;a en Docencia.
-      </p>
-     </div>
-     <div class="method-grid">
-      <div class="method-step">
-       <span>
-        01
-       </span>
-       <strong>
-        Descubre
-       </strong>
-       <p>
-        Observamos algo real y exploramos qu&eacute; hace.
-       </p>
-      </div>
-      <div class="method-step">
-       <span>
-        02
-       </span>
-       <strong>
-        Comprende
-       </strong>
-       <p>
-        Entendemos sus piezas y c&oacute;mo se relacionan.
-       </p>
-      </div>
-      <div class="method-step">
-       <span>
-        03
-       </span>
-       <strong>
-        Construye
-       </strong>
-       <p>
-        Probamos, escribimos c&oacute;digo y vemos resultados.
-       </p>
-      </div>
-      <div class="method-step">
-       <span>
-        04
-       </span>
-       <strong>
-        Desaf&iacute;ate
-       </strong>
-       <p>
-        Resolvemos variaciones sin copiar cada paso.
-       </p>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: section · section-white -->
-   <section aria-labelledby="conditions-title" class="section section-white">
-    <div class="container intro-columns">
-     <div>
-      <p class="kicker">
-       Primera generaci&oacute;n
-      </p>
-      <h2 id="conditions-title">
-       Un curso piloto que
-       <span class="editorial">
-        estamos preparando.
-       </span>
-      </h2>
-     </div>
-     <div>
-      <p class="lead">
-       <strong>
-        $1,000 MXN
-       </strong>
-       es el precio piloto propuesto por el curso completo de 12 sesiones de dos horas, sujeto a confirmaci&oacute;n de las condiciones finales.
-      </p>
-      <p class="muted">
-       Primero realizaremos una clase muestra gratuita. Estamos reuniendo personas interesadas para definir fecha y horarios; el inicio depender&aacute; de completar el grupo m&iacute;nimo.
-      </p>
-      <div class="notice">
-       <strong>
-        A&uacute;n no hay fechas ni inscripciones confirmadas.
-       </strong>
-       Al escribir recibir&aacute;s informaci&oacute;n sobre la propuesta y la futura clase muestra. No necesitas pagar para expresar inter&eacute;s.
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: section-compact -->
-   <section aria-labelledby="faq-title" class="section-compact">
-    <div class="container">
-     <div class="section-intro">
-      <p class="kicker">
-       Preguntas habituales
-      </p>
-      <h2 id="faq-title">
-       &iquest;Te gustar&iacute;a
-       <span class="editorial">
-        comenzar?
-       </span>
-      </h2>
-     </div>
-     <div class="faq-list">
-      <details>
-       <summary>
-        &iquest;Necesito conocimientos previos?
-       </summary>
-       <p>
-        No. La propuesta est&aacute; dise&ntilde;ada para personas que quieren comenzar desde cero y practicar con HTML, CSS y JavaScript paso a paso.
-       </p>
-      </details>
-      <details>
-       <summary>
-        &iquest;La clase muestra ya tiene fecha?
-       </summary>
-       <p>
-        Todav&iacute;a no. Actualmente estamos reuniendo personas interesadas y despu&eacute;s confirmaremos fechas, horarios y condiciones de apertura.
-       </p>
-      </details>
-      <details>
-       <summary>
-        &iquest;El curso es presencial?
-       </summary>
-       <p>
-        No. La propuesta piloto contempla 12 sesiones en vivo, completamente online.
-       </p>
-      </details>
-     </div>
-    </div>
-   </section>
-   <!-- Sección: contacto -->
-   <section aria-labelledby="contact-title" class="section anchor-offset" id="contacto">
-    <div class="container">
-     <div class="contact-panel">
-      <div>
-       <p class="kicker">
-        Hablemos
-       </p>
-       <h2 id="contact-title">
-        Tu primera l&iacute;nea de c&oacute;digo puede ser el comienzo.
-       </h2>
-       <p>
-        Si te gustar&iacute;a participar en la clase muestra gratuita, escr&iacute;beme. Te compartir&eacute; los detalles cuando definamos horarios y apertura del grupo.
-       </p>
-      </div>
-      <div class="contact-actions">
-       <a class="btn btn-light" data-contact="programacion" href="#contacto">
-        Quiero informaci&oacute;n del curso
-        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
-         <path d="M5 12h14m-6-6 6 6-6 6">
-         </path>
-        </svg>
-       </a>
-       <span class="contact-secondary">
-        Abre opciones de contacto: Gmail web o copiar mi correo. El formulario directo se habilita al configurarlo.
-       </span>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main>
-  <div id="shared-footer">
-  </div>
-  <div id="shared-contact">
-  </div>
- </body>
-</html>
+<!doctype html>
 
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Curso de desarrollo web desde cero | Angie Torres</title>
+    <meta
+      content="Curso online en preparación: HTML, CSS, JavaScript e IA como apoyo. 12 sesiones, 24 horas y clase muestra gratuita, con fechas por definir."
+      name="description"
+    />
+    <meta content="#f7f8fa" name="theme-color" />
+    <meta content="website" property="og:type" />
+    <meta content="es_MX" property="og:locale" />
+    <meta
+      content="Curso de desarrollo web desde cero | Angie Torres"
+      property="og:title"
+    />
+    <meta
+      content="Curso online en preparación: HTML, CSS, JavaScript e IA como apoyo. 12 sesiones, 24 horas y clase muestra gratuita, con fechas por definir."
+      property="og:description"
+    />
+    <link
+      href="./assets/chewie/chewie-long.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="./assets/chewie/chewie-long-48.png"
+      rel="icon"
+      sizes="48x48"
+      type="image/png"
+    />
+    <link
+      href="./assets/chewie/chewie-long-180.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link href="./css/tokens.css" rel="stylesheet" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/components.css" rel="stylesheet" />
+    <link href="./css/chewie-v13.css" rel="stylesheet" />
+    <link href="./css/visual-refresh-v14.css" rel="stylesheet" />
+    <link href="./css/restore-v16.css" rel="stylesheet" />
+    <link href="./css/pages/aprender.css" rel="stylesheet" />
+    <link href="./css/shared-polish.css" rel="stylesheet" />
+    <script defer="" src="./js/emailjs-config.js"></script>
+    <script defer="" src="./js/shared-layout.js"></script>
+  </head>
+  <body data-page="aprender">
+    <a class="skip-link" href="#contenido"> Saltar al contenido </a>
+    <div id="shared-header"></div>
+    <div id="shared-backdrop"></div>
+    <main id="contenido">
+      <!-- Sección: page-hero · page-hero-learning -->
+      <section
+        aria-labelledby="learn-title"
+        class="page-hero page-hero-learning"
+      >
+        <div class="container page-hero-grid">
+          <div>
+            <p class="kicker">
+              Curso online · Primera generación en preparación
+            </p>
+            <h1 id="learn-title">
+              No sólo aprendas código.
+              <span class="editorial"> Crea algo que funcione. </span>
+            </h1>
+            <p class="lead">
+              Descubre el desarrollo web construyendo proyectos, resolviendo
+              retos y utilizando la inteligencia artificial como una herramienta
+              para pensar mejor, no para dejar de pensar.
+            </p>
+            <div class="btn-row">
+              <a
+                class="btn btn-primary"
+                data-contact="programacion"
+                href="#contacto"
+              >
+                Solicitar clase muestra
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6"></path>
+                </svg>
+              </a>
+              <a class="btn btn-outline" href="#contenido-curso">
+                Explorar el contenido
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+            <p class="hero-meta">HTML · CSS · JavaScript · IA como apoyo</p>
+          </div>
+          <div
+            aria-label="Ilustración tipográfica de una práctica de JavaScript, no un editor funcional"
+            class="learning-visual"
+          >
+            <div class="code-window">
+              <div aria-hidden="true" class="window-top">
+                <i> </i>
+                <i> </i>
+                <i> </i>
+                <span> mi-primera-app.js </span>
+              </div>
+              <div class="code-content">
+                <pre
+                  class="code-lines"
+                ><code><span class="violet">const</span> idea = <span class="peach">"Mi primera web"</span>;
+
+<span class="violet">function</span> <span class="mint">crear</span>() {
+  <span class="violet">return</span> <span class="peach">"¡Lo hice funcionar!"</span>;
+}
+
+<span class="mint">crear</span>(); <span class="comment">// empieza aquí</span></code></pre>
+              </div>
+            </div>
+            <p class="learning-caption">Aprender creando · Un paso a la vez</p>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: section-compact · section-white -->
+      <section class="section-compact section-white">
+        <div class="container">
+          <div aria-label="Datos del curso piloto" class="facts-strip">
+            <div class="fact">
+              <strong> 12 </strong>
+              <span> sesiones en vivo </span>
+            </div>
+            <div class="fact">
+              <strong> 24 h </strong>
+              <span> de práctica guiada </span>
+            </div>
+            <div class="fact">
+              <strong> 100% </strong>
+              <span> online · grupos pequeños </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: section -->
+      <section aria-labelledby="learn-intro" class="section">
+        <div class="container intro-columns">
+          <div>
+            <p class="kicker">Para empezar desde cero</p>
+            <h2 id="learn-intro">
+              No necesitas saber programar
+              <span class="editorial"> para comenzar. </span>
+            </h2>
+          </div>
+          <div>
+            <p class="lead">
+              El curso está pensado para adolescentes, jóvenes y adultos sin
+              experiencia previa. Aprenderemos a construir interfaces, darles
+              comportamiento y resolver problemas con lógica.
+            </p>
+            <p class="muted">
+              La idea no es memorizar un lenguaje: es comprender qué estás
+              haciendo, detectar errores y terminar con una pequeña aplicación
+              web que puedas modificar y publicar.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: contenido-curso -->
+      <section
+        aria-labelledby="curriculum-title"
+        class="section section-white anchor-offset"
+        id="contenido-curso"
+      >
+        <div class="container">
+          <div class="section-intro">
+            <p class="kicker">Lo que exploraremos</p>
+            <h2 id="curriculum-title">
+              De una página vacía a
+              <span class="editorial"> un proyecto propio. </span>
+            </h2>
+            <p>
+              Una ruta de aprendizaje por proyectos, con retos prácticos desde
+              las primeras clases.
+            </p>
+          </div>
+          <div class="curriculum-grid">
+            <div class="curriculum-card">
+              <span class="module"> Bloque 01 </span>
+              <h3>Tu primera interfaz</h3>
+              <p>
+                Estructura con HTML, estilos con CSS, organización de archivos y
+                uso básico de VS Code.
+              </p>
+            </div>
+            <div class="curriculum-card">
+              <span class="module"> Bloque 02 </span>
+              <h3>Que las cosas pasen</h3>
+              <p>
+                JavaScript, eventos, variables y funciones para agregar
+                interacción a la web.
+              </p>
+            </div>
+            <div class="curriculum-card">
+              <span class="module"> Bloque 03 </span>
+              <h3>Aprender a resolver</h3>
+              <p>
+                Condiciones, ciclos, arreglos, objetos, diagramas y depuración
+                aplicados a retos sencillos.
+              </p>
+            </div>
+            <div class="curriculum-card">
+              <span class="module"> Bloque 04 </span>
+              <h3>Tu proyecto publicado</h3>
+              <p>
+                Integrar una aplicación web pequeña, revisar su funcionamiento y
+                compartirla en internet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: section -->
+      <section aria-labelledby="method-title" class="section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="kicker">Mi manera de enseñar</p>
+            <h2 id="method-title">
+              Entender, practicar
+              <br />
+              <span class="editorial"> y volver a intentar. </span>
+            </h2>
+            <p>
+              Combino mi experiencia como desarrolladora con mi formación de
+              Maestría en Docencia.
+            </p>
+          </div>
+          <div class="method-grid">
+            <div class="method-step">
+              <span> 01 </span>
+              <strong> Descubre </strong>
+              <p>Observamos algo real y exploramos qué hace.</p>
+            </div>
+            <div class="method-step">
+              <span> 02 </span>
+              <strong> Comprende </strong>
+              <p>Entendemos sus piezas y cómo se relacionan.</p>
+            </div>
+            <div class="method-step">
+              <span> 03 </span>
+              <strong> Construye </strong>
+              <p>Probamos, escribimos código y vemos resultados.</p>
+            </div>
+            <div class="method-step">
+              <span> 04 </span>
+              <strong> Desafíate </strong>
+              <p>Resolvemos variaciones sin copiar cada paso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: section · section-white -->
+      <section
+        aria-labelledby="toolkit-title"
+        class="section section-white learning-toolkit"
+      >
+        <div class="container">
+          <div class="section-intro">
+            <p class="kicker">Herramientas para aprender creando</p>
+            <h2 id="toolkit-title">
+              Un entorno sencillo,
+              <span class="editorial"> sin instalar todo de golpe. </span>
+            </h2>
+            <p>
+              Estas son herramientas tentativas para el curso piloto. Elegiremos
+              pocas por etapa para no saturar a quienes comienzan; todas tienen
+              formas de acceso gratuitas, algunas con condiciones o límites.
+            </p>
+          </div>
+          <figure class="course-stack-visual">
+            <img
+              alt="Tarjetas ilustradas de HTML, CSS y JavaScript, tecnologías principales del curso"
+              height="260"
+              loading="lazy"
+              src="./assets/curso/tecnologias-web.svg"
+              width="650"
+            />
+            <figcaption>
+              HTML para estructurar, CSS para diseñar y JavaScript para dar vida
+              a tus ideas.
+            </figcaption>
+          </figure>
+          <div class="course-tools-grid">
+            <article class="course-tool-card">
+              <span class="tool-mark mark-vscode"> VS </span>
+              <div>
+                <span class="mini-tag"> ESENCIAL </span>
+                <h3>Visual Studio Code</h3>
+                <p>Editor para HTML, CSS y JavaScript.</p>
+                <a
+                  href="https://code.visualstudio.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Conocer herramienta ↗
+                </a>
+              </div>
+            </article>
+            <article class="course-tool-card">
+              <span class="tool-mark mark-codeorg"> AL </span>
+              <div>
+                <span class="mini-tag"> EXPLORACIÓN VISUAL </span>
+                <h3>Code.org · App Lab</h3>
+                <p>Eventos, lógica y creación de aplicaciones sencillas.</p>
+                <a
+                  href="https://code.org/en-US/tools/app-lab"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Explorar App Lab ↗
+                </a>
+              </div>
+            </article>
+            <article class="course-tool-card">
+              <span class="tool-mark mark-p5"> p5 </span>
+              <div>
+                <span class="mini-tag"> CREATIVIDAD </span>
+                <h3>p5.js</h3>
+                <p>Animaciones y retos visuales con JavaScript.</p>
+                <a
+                  href="https://editor.p5js.org/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Ver editor ↗
+                </a>
+              </div>
+            </article>
+            <article class="course-tool-card">
+              <span class="tool-mark mark-fcc"> { } </span>
+              <div>
+                <span class="mini-tag"> PRÁCTICA </span>
+                <h3>freeCodeCamp</h3>
+                <p>Ejercicios guiados para repasar los fundamentos.</p>
+                <a
+                  href="https://www.freecodecamp.org/learn/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Explorar ejercicios ↗
+                </a>
+              </div>
+            </article>
+            <article class="course-tool-card">
+              <span class="tool-mark mark-ai"> IA </span>
+              <div>
+                <span class="mini-tag"> OPCIONAL · APOYO CRÍTICO </span>
+                <h3>ChatGPT o Gemini</h3>
+                <p>
+                  Comparar explicaciones, investigar errores y comprender
+                  soluciones, sin sustituir la práctica.
+                </p>
+              </div>
+            </article>
+            <article class="course-tool-card">
+              <span class="tool-mark mark-git"> git </span>
+              <div>
+                <span class="mini-tag"> PROYECTO FINAL </span>
+                <h3>GitHub + GitHub Pages</h3>
+                <p>
+                  Introducción al control de versiones y publicación del
+                  proyecto final.
+                </p>
+                <a
+                  href="https://pages.github.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Conocer GitHub Pages ↗
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="toolkit-note" role="note">
+            <p>
+              <strong>Alternativas y recursos:</strong> CodePen como respaldo
+              online, MDN para documentación y diagrams.net para diagramas de
+              lógica. Revisaremos la disponibilidad y condiciones de cada
+              plataforma antes de abrir el grupo. No es necesario instalar ni
+              pagar todo desde el inicio.
+            </p>
+            <div aria-label="Recursos de apoyo" class="toolkit-links">
+              <a
+                href="https://codepen.io/"
+                rel="noopener noreferrer"
+                target="_blank"
+                >CodePen ↗</a
+              >
+              <a
+                href="https://developer.mozilla.org/es/"
+                rel="noopener noreferrer"
+                target="_blank"
+                >MDN ↗</a
+              >
+              <a
+                href="https://app.diagrams.net/"
+                rel="noopener noreferrer"
+                target="_blank"
+                >diagrams.net ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="conditions-title" class="section section-white">
+        <div class="container intro-columns">
+          <div>
+            <p class="kicker">Primera generación</p>
+            <h2 id="conditions-title">
+              Un curso piloto que
+              <span class="editorial"> estamos preparando. </span>
+            </h2>
+          </div>
+          <div>
+            <p class="lead">
+              <strong> $1,000 MXN </strong>
+              es el precio piloto propuesto por el curso completo de 12 sesiones
+              de dos horas, sujeto a confirmación de las condiciones finales.
+            </p>
+            <p class="muted">
+              Primero realizaremos una clase muestra gratuita. Estamos reuniendo
+              personas interesadas para definir fecha y horarios; el inicio
+              dependerá de completar el grupo mínimo.
+            </p>
+            <div class="notice">
+              <strong> Aún no hay fechas ni inscripciones confirmadas. </strong>
+              Al escribir recibirás información sobre la propuesta y la futura
+              clase muestra. No necesitas pagar para expresar interés.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: section-compact -->
+      <section aria-labelledby="faq-title" class="section-compact">
+        <div class="container">
+          <div class="section-intro">
+            <p class="kicker">Preguntas habituales</p>
+            <h2 id="faq-title">
+              ¿Te gustaría
+              <span class="editorial"> comenzar? </span>
+            </h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>¿Necesito conocimientos previos?</summary>
+              <p>
+                No. La propuesta está diseñada para personas que quieren
+                comenzar desde cero y practicar con HTML, CSS y JavaScript paso
+                a paso.
+              </p>
+            </details>
+            <details>
+              <summary>¿La clase muestra ya tiene fecha?</summary>
+              <p>
+                Todavía no. Actualmente estamos reuniendo personas interesadas y
+                después confirmaremos fechas, horarios y condiciones de
+                apertura.
+              </p>
+            </details>
+            <details>
+              <summary>¿El curso es presencial?</summary>
+              <p>
+                No. La propuesta piloto contempla 12 sesiones en vivo,
+                completamente online.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Sección: contacto -->
+      <section
+        aria-labelledby="contact-title"
+        class="section anchor-offset"
+        id="contacto"
+      >
+        <div class="container">
+          <div class="contact-panel">
+            <div>
+              <p class="kicker">Hablemos</p>
+              <h2 id="contact-title">
+                Tu primera línea de código puede ser el comienzo.
+              </h2>
+              <p>
+                Si te gustaría participar en la clase muestra gratuita,
+                escríbeme. Te compartiré los detalles cuando definamos horarios
+                y apertura del grupo.
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a
+                class="btn btn-light"
+                data-contact="programacion"
+                href="#contacto"
+              >
+                Quiero información del curso
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                  viewbox="0 0 24 24"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6"></path>
+                </svg>
+              </a>
+              <span class="contact-secondary">
+                Elige el servicio que te interesa y escríbeme desde Gmail.
+                También puedes consultar disponibilidad.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="shared-footer"></div>
+    <div id="shared-contact"></div>
+  </body>
+</html>

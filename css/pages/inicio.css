@@ -1,5 +1,5 @@
 /* ==========================================================
-   {name.upper()} · Estilos particulares de esta página
+   INICIO · Estilos particulares de esta página
    ========================================================== */
 
 .hero-stage.hero-stage-illustrated .stage-field {
@@ -470,3 +470,248 @@
 /* ==========================================================
    RESPONSIVE · cambios por breakpoint al final
    ========================================================== */
+
+/* ================================================================
+   TRABAJO SELECCIONADO · tercera tarjeta y concepto de invitación
+   ================================================================ */
+.project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.project-grid .project-card-collab .project-image {
+  aspect-ratio: 16 / 10;
+}
+
+.project-grid .project-card-collab .project-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-grid .project-card-collab .text-link {
+  margin-top: auto;
+}
+
+.invitation-work.invitation-editorial {
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
+  gap: clamp(1.25rem, 3.5vw, 2.5rem);
+  align-items: center;
+  border: 1px solid rgba(233, 238, 242, .2);
+  border-radius: 23px;
+  background: #22314a;
+  padding: clamp(1rem, 2vw, 1.55rem);
+  overflow: hidden;
+}
+
+.invitation-editorial .invitation-work-visual {
+  min-width: 0;
+  min-height: 230px;
+  padding: 1.6rem 1rem;
+  border-radius: 17px;
+  background: #f5eae5;
+}
+
+.invitation-editorial .invitation-work-visual > span {
+  font-size: clamp(1.5rem, 2.3vw, 2rem);
+}
+
+.invitation-editorial > div:last-child {
+  min-width: 0;
+}
+
+.invitation-editorial h3 {
+  font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+  max-width: 27ch;
+}
+
+.invitation-editorial p {
+  max-width: 47ch;
+  line-height: 1.65;
+}
+
+/* ================================================================
+   RESPONSIVE · Inicio
+   ================================================================ */
+
+/* ================================================================
+   V2.3 · PREGUNTAS FRECUENTES Y SEMBLANZA
+   ================================================================ */
+.faq-teaser { padding-block: clamp(2.1rem, 4.2vw, 3.8rem); }
+.faq-teaser .teaser-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+.faq-teaser h2 { max-width: 25ch; font-size: clamp(1.85rem,3vw,2.9rem); }
+.faq-teaser .teaser-row > div { max-width: 830px; }
+.faq-teaser .teaser-row p:last-child { margin: .85rem 0 0; }
+.faq-teaser .btn { white-space: nowrap; }
+/* Reducir espacio adicional entre Chewie y preguntas. */
+.about-grid + .faq-teaser { margin-top: 0; }
+.about-tags { gap: .5rem; }
+.about-tags span { font-size: .88rem; padding: .4rem .75rem; }
+.project-note { color: #b8cbd0; max-width: 68ch; }
+
+@media (max-width: 1050px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .invitation-work.invitation-editorial {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+    padding: 1rem;
+  }
+
+  .invitation-editorial .invitation-work-visual {
+    min-height: 175px;
+    padding: 1.25rem .8rem;
+  }
+
+  .invitation-editorial h3 {
+    font-size: 1.45rem;
+  }
+
+  .invitation-editorial .text-link {
+    font-size: .9rem;
+  }
+}
+
+
+/* ================================================================
+   RESPONSIVE · V2.3 Inicio
+   ================================================================ */
+@media (max-width: 860px) {
+  .faq-teaser .teaser-row { grid-template-columns: minmax(0,1fr); }
+  .faq-teaser .btn { justify-self: start; }
+}
+@media (max-width: 680px) {
+  .faq-teaser { padding-block: 2.5rem; }
+  .faq-teaser h2 { font-size: clamp(1.75rem,7.7vw,2.35rem); }
+  .about-tags span { font-size: .78rem; padding: .35rem .6rem; }
+}
+
+
+/* ==========================================================
+   INICIO · V2.5 · Evidencia real (landing claro / oscuro)
+   ========================================================== */
+.hero-stage.hero-stage-real {
+  isolation: isolate;
+}
+
+.hero-stage.hero-stage-real .stage-field {
+  background: linear-gradient(145deg, #e3eeea, #f0f5f3);
+}
+
+.hero-stage.hero-stage-real .stage-window {
+  overflow: hidden;
+  border: 1px solid #dce4e7;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow-frame);
+}
+
+.hero-stage.hero-stage-real .stage-primary {
+  width: 94%;
+  top: 10%;
+  left: 0;
+  transform: rotate(-2deg);
+}
+
+.hero-stage.hero-stage-real .stage-secondary {
+  width: 73%;
+  right: -1%;
+  bottom: 7%;
+  transform: rotate(3deg);
+}
+
+.hero-stage.hero-stage-real .stage-window img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1915 / 906;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.hero-stage.hero-stage-real .window-top {
+  display: flex;
+  position: static;
+  height: 30px;
+  gap: .35rem;
+  align-items: center;
+  padding: 0 .8rem;
+  background: #fff;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.hero-stage.hero-stage-real .window-top i {
+  width: 6px;
+  height: 6px;
+  background: #d1d7dc;
+  border-radius: 50%;
+}
+
+.hero-stage.hero-stage-real .window-top span {
+  margin-left: auto;
+  font-size: .62rem;
+  font-weight: 700;
+  color: #59697c;
+}
+
+.hero-stage.hero-stage-real .stage-note-link {
+  z-index: 4;
+  left: 1%;
+  bottom: 2%;
+  transform: rotate(-2deg);
+  text-decoration: none;
+  background: #152238;
+  color: #fff;
+  transition: transform .2s ease;
+}
+
+.hero-stage.hero-stage-real .stage-note-link:hover,
+.hero-stage.hero-stage-real .stage-note-link:focus-visible {
+  transform: rotate(0deg) translateY(-2px);
+}
+
+/* ==========================================================
+   INICIO · V2.5 · Media queries
+   ========================================================== */
+@media (max-width: 680px) {
+  .hero-stage.hero-stage-real {
+    min-height: 290px;
+  }
+
+  .hero-stage.hero-stage-real .stage-primary {
+    width: 97%;
+    top: 4%;
+    left: 0;
+  }
+
+  .hero-stage.hero-stage-real .stage-secondary {
+    width: 77%;
+    right: 0;
+    bottom: 14%;
+  }
+
+  .hero-stage.hero-stage-real .stage-note-link {
+    left: 3%;
+    bottom: 2%;
+    font-size: .66rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-stage.hero-stage-real {
+    min-height: 250px;
+  }
+}

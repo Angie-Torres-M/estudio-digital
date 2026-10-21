@@ -1,5 +1,5 @@
 /* ==========================================================
-   {name.upper()} · Estilos particulares de esta página
+   NEGOCIOS · Estilos particulares de esta página
    ========================================================== */
 
 .business-visual {
@@ -151,3 +151,253 @@
 /* ==========================================================
    RESPONSIVE · cambios por breakpoint al final
    ========================================================== */
+
+
+/* ================================================================
+   V2.3 · DEMOSTRACIONES VISUALES Y PROMOCIÓN PROPUESTA
+   ================================================================ */
+.business-demo-grid { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:1.2rem; margin-top:2rem; }
+.business-demo-card { overflow:hidden; border:1px solid #e0e8e8; border-radius:22px; background:#fff; box-shadow:0 8px 25px rgba(21,34,56,.05); }
+.business-demo-card img { width:100%; aspect-ratio:16/10; object-fit:cover; }
+.business-demo-card > div { padding:1.3rem 1.5rem 1.65rem; }
+.business-demo-card h3 { font-size:1.4rem; margin:.6rem 0 .6rem; }
+.business-demo-card p { margin:0; color:var(--muted); }
+.business-promo-panel { display:grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap:clamp(1.3rem,4vw,3.3rem); align-items:center; padding:clamp(1.25rem,4vw,3rem); border:1px solid #dbe9e4; border-radius:25px; background:#edf4f1; }
+.business-promo-copy > p { max-width:65ch; }
+.business-promo-copy .muted { font-size:.86rem; }
+.business-promo-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; }
+.business-promo-gallery figure { margin:0; border-radius:16px; overflow:hidden; background:#fff; border:1px solid #dfe8e8; }
+.business-promo-gallery img { width:100%; aspect-ratio: 4/5; object-fit:cover; }
+.business-promo-gallery figcaption { font-size:.78rem; font-weight:700; line-height:1.4; padding:.6rem; }
+
+
+/* ================================================================
+   RESPONSIVE · V2.3 Negocios
+   ================================================================ */
+@media (max-width:860px) {
+  .business-promo-panel { grid-template-columns:minmax(0,1fr); }
+}
+@media (max-width:680px) {
+  .business-demo-grid { grid-template-columns:minmax(0,1fr); }
+  .business-demo-card > div { padding:1.2rem; }
+  .business-promo-panel { padding:1rem; }
+}
+
+
+/* ==========================================================
+   NEGOCIOS · V2.5 · E-commerce real en hero
+   ========================================================== */
+.business-visual-real {
+  padding: clamp(.8rem, 2.5vw, 1.3rem);
+}
+
+.business-visual-real .mock-browser {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #d7e2e4;
+  background: #fff;
+  box-shadow: var(--shadow-frame);
+}
+
+.business-visual-real .window-top {
+  position: static;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 .85rem;
+  gap: .35rem;
+  background: #fff;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.business-visual-real .window-top i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d1d7dc;
+}
+
+.business-visual-real .window-top span {
+  margin-left: auto;
+  font-size: .65rem;
+  font-weight: 700;
+  color: #59697c;
+  letter-spacing: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.business-visual-real .mock-browser img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1919 / 892;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.business-visual-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .55rem 1rem;
+  margin-top: 1rem;
+  font-size: .79rem;
+  font-weight: 700;
+  color: #475d6a;
+}
+
+.business-visual-caption a {
+  color: #145d58;
+  text-underline-offset: 3px;
+}
+
+/* ==========================================================
+   NEGOCIOS · V2.5 · Galería de proyecto administrable
+   ========================================================== */
+.mf-case-section {
+  padding-block: clamp(3rem, 6vw, 5.5rem);
+}
+
+.mf-case-intro {
+  max-width: 76ch;
+}
+
+.mf-case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mf-case-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dfe7e8;
+  border-radius: 19px;
+  background: #fff;
+  box-shadow: 0 14px 29px rgba(21, 34, 56, .045);
+}
+
+.mf-case-admin {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+
+.mf-case-image {
+  display: block;
+  overflow: hidden;
+  background: #e9efec;
+}
+
+.mf-case-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top left;
+  transition: transform .25s ease;
+}
+
+.mf-case-image:hover img {
+  transform: scale(1.02);
+}
+
+.mf-case-copy {
+  padding: 1.25rem;
+}
+
+.mf-case-admin .mf-case-copy {
+  padding: clamp(1.35rem, 3vw, 2.2rem);
+  align-self: center;
+}
+
+.mf-case-card h3 {
+  font-size: clamp(1.2rem, 1.7vw, 1.6rem);
+  margin: .7rem 0 .55rem;
+}
+
+.mf-case-card p {
+  font-size: .93rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.mf-case-disclaimer {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #edf4f1;
+}
+
+.mf-case-disclaimer strong {
+  color: #155a55;
+}
+
+.mf-case-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
+
+.mf-case-actions .btn {
+  white-space: normal;
+  text-align: center;
+}
+
+.mf-case-footnote {
+  color: var(--muted);
+  font-size: .81rem;
+  margin-top: 1rem;
+}
+
+/* ==========================================================
+   NEGOCIOS · V2.5 · Media queries
+   ========================================================== */
+@media (max-width: 900px) {
+  .mf-case-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mf-case-admin {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .mf-case-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mf-case-admin {
+    grid-column: auto;
+  }
+
+  .mf-case-copy,
+  .mf-case-admin .mf-case-copy {
+    padding: 1.2rem;
+  }
+
+  .mf-case-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mf-case-actions .btn {
+    width: 100%;
+  }
+
+  .business-visual-caption {
+    justify-content: flex-start;
+  }
+}
