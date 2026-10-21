@@ -71,3 +71,24 @@ Los estilos están formateados en declaraciones legibles. La cascada común se m
 ## Seguridad operativa
 
 Este ZIP es un proyecto completo nuevo; **no sobrescribir** la carpeta actual sin respaldo. No hay push, commit ni despliegue.
+
+
+## GitHub Pages — ubicación en subcarpeta
+
+Este sitio funciona tanto desde una carpeta raíz local (`http://localhost:5500/`)
+como desde GitHub Pages bajo el prefijo `/estudio-digital/`. Para eso todas las
+rutas internas en HTML y los fragmentos usan direcciones relativas (`./`).
+No cambies estas rutas por `/css/`, `/assets/`, `/js/` o `/fragments/`, porque
+en GitHub Pages apuntarían a la raíz del dominio y causarían errores 404.
+
+Páginas publicables:
+- `/estudio-digital/` — Inicio.
+- `/estudio-digital/negocios.html` — Negocios.
+- `/estudio-digital/eventos.html` — Eventos.
+- `/estudio-digital/aprender.html` — Aprender.
+- `/estudio-digital/preguntas.html` — Preguntas.
+
+El archivo `_redirects` es para Cloudflare Pages, no para GitHub Pages. Enlaces
+internos usan directamente los archivos `.html`.
+
+Se incluye `.nojekyll` para servir el contenido estático sin procesarlo con Jekyll.

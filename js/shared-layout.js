@@ -7,10 +7,10 @@
   'use strict';
 
   const fragments = [
-    ['shared-header', '/fragments/header.html'],
-    ['shared-backdrop', '/fragments/nav-backdrop.html'],
-    ['shared-contact', '/fragments/contact-modal.html'],
-    ['shared-footer', '/fragments/footer.html'],
+    ['shared-header', './fragments/header.html'],
+    ['shared-backdrop', './fragments/nav-backdrop.html'],
+    ['shared-contact', './fragments/contact-modal.html'],
+    ['shared-footer', './fragments/footer.html'],
   ];
 
   try {
@@ -29,11 +29,11 @@
 
     // Marcar la página activa en la navegación.
     const current = document.body.dataset.page;
-    const currentHref = current === 'inicio' ? '/' : `/${current}.html`;
+    const currentHref = current === 'inicio' ? './' : `./${current}.html`;
     document.querySelectorAll('.site-nav a[aria-current]').forEach(a => a.removeAttribute('aria-current'));
     document.querySelector(`.site-nav a[href="${currentHref}"]`)?.setAttribute('aria-current', 'page');
 
-    await Promise.all([loadScript('/js/navigation.js'), loadScript('/js/contact.js')]);
+    await Promise.all([loadScript('./js/navigation.js'), loadScript('./js/contact.js')]);
   } catch (error) {
     console.error('No se pudieron cargar componentes compartidos:', error);
     for (const [id] of fragments) {
